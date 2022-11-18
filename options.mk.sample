@@ -51,16 +51,16 @@ CCCOM=g++ -m64 -std=c++17 -fconcepts -fPIC
 ## Mac OSX system
 ##
 
-PLATFORM=macos
-BLAS_LAPACK_LIBFLAGS=-framework Accelerate
+#PLATFORM=macos
+#BLAS_LAPACK_LIBFLAGS=-framework Accelerate
 
 ##
 ## Example using a C interface to LAPACK on GNU/LINUX systems
 ## (Path to lib/ folder may differ on your system)
 ##
 
-#PLATFORM=lapack
-#BLAS_LAPACK_LIBFLAGS=-lpthread -L/usr/lib -lblas -llapack 
+PLATFORM=lapack
+BLAS_LAPACK_LIBFLAGS=-lpthread -L/usr/lib -lblas -llapack 
 
 ##
 ## Example using the Intel MKL library
